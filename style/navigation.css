@@ -1,0 +1,139 @@
+nav {
+	/*    border-top: 5px solid #01354e;*/
+	-moz-box-shadow: 0 2px 3px 0 rgb(0, 0, 0, .75);
+	-webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .75);
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .75);
+	z-index: 9;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+
+	margin-top: -33px;
+	margin-left: -7px;
+	margin-right: -7px;
+}
+
+#navbutton {
+	background-color: rgba(255, 255, 255, 0);
+	border: 0;
+}
+
+nav button {
+	padding-top: 30px;
+	font-size: 22px;
+	padding-bottom: 10px;
+}
+
+/*for ANDROID PHONES*/
+@media only screen and (max-device-width : 768px) {
+	nav ul li a {
+		font-size: 20px;
+		display: inline-flex;
+		min-width: 100px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+	}
+
+	nav ul {
+		/*            padding-bottom: 10px;*/
+		/*            text-align: center;*/
+		/*    display: none;*/
+		margin: 0;
+
+		border-top: 1px solid rgba(1, 53, 78, 0.32);
+		padding: 0;
+	}
+
+	nav {
+		width: 101.5%;
+	}
+
+	nav button {
+		font-size: 50px;
+		padding: 18px 200px 0px 200px;
+		margin-left: -27px;
+	}
+
+}
+
+/*for IPAD*/
+@media only screen and (max-device-width : 1024px) {
+	nav ul li a {
+		font-size: 25px;
+		display: inline-flex;
+		min-width: 100px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+	}
+
+	nav ul {
+		/*            padding-bottom: 10px;*/
+		/*            text-align: center;*/
+		/*    display: none;*/
+		margin: 0;
+
+		border-top: 1px solid rgba(1, 53, 78, 0.32);
+		padding: 0;
+	}
+
+	nav {
+		width: 101.5%;
+	}
+
+	nav button {
+		font-size: 50px;
+		padding: 18px 480px 0px 480px;
+	}
+
+}
+
+.pagetitleclass {
+	position: absolute;
+	font-size: 35px;
+	vertical-align: text-top;
+	margin-left: 25px;
+	/*	z-index: -2;*/
+}
+
+nav ul {
+	margin: 0;
+	border-top: 1px solid rgba(1, 53, 78, 0.32);
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-flex;
+	text-align: center;
+	margin-right: -4px;
+}
+
+nav li a {
+	/*            padding: 0px 50px 10px 50px;*/
+	/*            padding-top: -10px;*/
+
+	font-size: 15px;
+	display: block;
+	min-width: 170px;
+	border-left: 1px solid rgba(1, 53, 78, 0.32);
+	text-decoration: none;
+}
+
+/*
+nav li:first-child a {
+    border-left: 0;
+}
+*/
+
+nav li a:hover {
+	background-color: whitesmoke;
+}
+
+nav li a:focus {
+	color: pink;
+}
+
+.focus {
+	color: red;
+}

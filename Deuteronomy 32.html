@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Deuteronomy 32</title>
+	<script src="jscript/jquery-3.4.1.min.js"></script>
+	<script src="https://www.biblegateway.com/public/link-to-us/tooltips/bglinks.js" type="text/javascript"></script>
+	<!--	<script type="text/javascript" src="jscript/jquery.tablehover.js"></script>-->
+
+	<link href="style/style.css" rel="stylesheet">
+	<link href="style/hoverStyle.css" rel="stylesheet">
+	<link href="style/navigation.css" rel="stylesheet">
+
+</head>
+
+<body style="position: relative; z-index: -2;">
+	<h2 class="pagetitleclass">Deuteronomy-32</h2>
+	<nav class="titlebar" id="titlebar"></nav>
+	<!--Menu For the Timeline Table-->
+
+	<div style="position: sticky; top: 0; z-index: -1;">
+		<div id="tablemenuDIV">
+			<ol>
+				<li style="width:;">
+					<button id="tablemenuX" class="navbuttons" style="font-weight: bolder; width: auto;padding: 0 5px;">&#9932;</button>
+					<button id="tablemenubutton1" class="navbuttons">SHOW ALL</button>
+					<button id="tablemenubutton2" class="navbuttons" style="display: none">HIDE ALL</button>
+				</li>
+				<!--			<li><input type="checkbox" class="tablemenu" id="checkall timelinesummary">MAIN</li>-->
+				<li><input type="checkbox" class="tablemenu" id="yahweh" value="yahweh"><label for="yahweh">Yahweh</label></li>
+				<li><input type="checkbox" class="tablemenu" id="Israel" value="Israel"><label for="Israel">Israel</label></li>
+				<li><input type="checkbox" class="tablemenu" id="Yahweh’s_Wrath" value="Yahweh’s_Wrath"><label for="Yahweh’s_Wrath">Yahweh’s Wrath</label></li>
+				<li><input type="checkbox" class="tablemenu" id="The_Nations" value="The_Nations"><label for="The_Nations">The Nations</label></li>
+				<li><input type="checkbox" class="tablemenu" id="The_Sons_of_God" value="The_Sons_of_God"><label for="The_Sons_of_God">The Sons of God</label></li>
+				<li><input type="checkbox" class="tablemenu" id="The_Dead" value="The_Dead"><label for="The_Dead">The Dead</label></li>
+			</ol>
+		</div>
+		<div style="display: inline-block; width: 100%; padding-top: 5px;">
+			<div>
+				<button id="tablemenu" class="navbuttons navbuttons2">&#9776;</button>
+				<button id="showall" class="navbuttons navbuttons2">Show All</button>
+				<button id="showmain" class="navbuttons navbuttons2">Main Time</button>
+				<button id="summary" class="navbuttons navbuttons2">Summary</button>
+			</div>
+			<!--
+			<div id="guideheadings">
+
+				<h4 style="margin-top: 0; float: left; padding-left: 10px;">Showing the Summary Timeline</h4>
+				<h4 style="margin-top: 0; float: left; padding-left: 10px;">Showing the Main Timelines</h4>
+				<h4 style="margin-top: 0; float: left; padding-left: 10px;">Showing All Timelines</h4>
+			</div>
+-->
+		</div>
+
+	</div>
+
+	<div class="timelineTableContainer" style="position:relative; width: auto; z-index: -10; ">
+
+		<table class="timelineTable" id="timelineTable">
+
+			<tbody>
+				<tr class="timelinesummary">
+					<th>MAIN<br>
+						<!--<input type="checkbox" id="checkall">-->
+					</th>
+					<th>Yahweh’s wrath kindles a fire [Deu 32:22]</th>
+					<th>Men, nations, the division of the earth and sons of God [Deu 32:8]</th>
+					<th>Israel is raised by Yahweh [Deu 32:10-14]</th>
+					<th>Israel abandons Yahweh for demons—foreign gods and detestable idols [Deu 32:15]</th>
+					<th>The Nations scatter Israel [Deu 32:26]</th>
+					<th>Yahweh makes Israel envious by choosing Gentiles in addition to Israel [Deu 32:16b]</th>
+					<th>The nations slip [Deu 32:35]</th>
+					<th>The Day of Disaster for the Nations [Deu 32:35]</th>
+					<th>The nations turn to Yahweh [Deu 32:43]</th>
+					<th>Yahweh atones for His land and people [Deu 32:43]</th>
+					<th>Yahweh heals the earth and makes all alive [Deu 32:39]</th>
+					<th>&nbsp;</th>
+				</tr>
+				<tr class="tdsubhead yahweh" value="yahweh">
+					<td>Yahweh<br><input type="checkbox" class="checkbox"></td>
+					<td>&nbsp;</td>
+					<td>Yahweh choses Israel as His own [Deu 32:9]</td>
+					<td>Yahweh singlehandedly raises Israel [Deu 32:10-14]</td>
+					<td>Yahweh becomes jealous and angry [Deu 32:16b]</td>
+					<td>Yahweh hides his face from Israel [Deu 32:19-20]</td>
+					<td>Yahweh choses Gentiles making Israel jealous [Deu 32:16b]</td>
+					<td>&nbsp;</td>
+					<td>Yahweh has mercy on Israel [Deu 32:36]</td>
+					<td>&nbsp;</td>
+					<td>Yahweh atones for His land and people [Deu 32:43]</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+
+				<tr class="tdsubhead Israel" value="Israel">
+					<td>Israel<br><input type="checkbox" id="testing" class="checkbox" value="Israel"></td>
+					<td>&nbsp;</td>
+					<td colspan="2">Israel is found and singlehandedly raised by Yahweh [Deu 32:10-14]</td>
+					<td colspan="2">Israel in idolatry [Deu 32:16-17]</td>
+					<td colspan="2">Israel in exile [Deu 28:64; 32:26]</td>
+					<td colspan="5">Israel turns to God and serves him faithfully and never again turns away from him [Deu 32:39].</td>
+				</tr>
+				<tr class="Israel">
+					<td><input type="checkbox" class="checkbox"></td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="6">The land of Israel is defiled [Deu 32:43]</td>
+					<td>Yahweh atones for His land and people [Deu 32:43]</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+
+				<tr class="tdsubhead Yahweh’s_Wrath" value="Yahweh’s_Wrath">
+					<td>Yahweh’s Wrath<br><input type="checkbox" class="checkbox"></td>
+					<td>Yahweh’s wrath kindles a fire [Deu 32:22]</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="3">Yahweh punishes Israel—He gives up his people to the enemy [Deu 32:23-25,30]</td>
+					<td>Yahweh comes and judges the nations and avenges his people [Deu 32:36,41-42,43]</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="Yahweh’s_Wrath">
+					<td><input type="checkbox" class="checkbox"></td>
+					<td colspan="12">The fire of Yahweh’s wrath burns [Deu 32:22]</td>
+				</tr>
+				<tr class="Yahweh’s_Wrath">
+					<td><input type="checkbox" class="checkbox"></td>
+					<td colspan="7">Yahweh kills [Deu 32:39]</td>
+					<td>Yahweh makes some alive [Deu 32:39]</td>
+					<td colspan="2">&nbsp;</td>
+					<td colspan="2">Yahweh makes all alive [Deu 32:39]</td>
+				</tr>
+				<tr class="Yahweh’s_Wrath">
+					<td><input type="checkbox" class="checkbox"></td>
+					<td colspan="10">Yahweh wounds man [Deu 32:39]</td>
+					<td colspan="2">Yahweh heals the world [Deu 32:39]</td>
+				</tr>
+
+				<tr class="tdsubhead The_Nations" value="The_Nations">
+					<td>The Nations<br><input type="checkbox" class="checkbox"></td>
+					<td>&nbsp;</td>
+					<td>Men are<br>i. Divided into nations, are<br>ii. Given their inheritances and<br>iii. Placed under the sons of God [Deu 32:8]</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>The Nations scatter Israel [Deu 32:26]</td>
+					<td>&nbsp;</td>
+					<td>The nations slip [Deu 32:35]</td>
+					<td>The Day of
+						Disaster for the Nations [Deu 32:35]</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="The_Nations">
+					<td><input type="checkbox" class="checkbox"></td>
+					<td>&nbsp;</td>
+					<td colspan="7">The nations drink from the vine of serpents [Deu 32:32-33]</td>
+					<td colspan="4">The nations turn to Yahweh [Deu 32:43]</td>
+				</tr>
+				<tr class="The_Nations">
+					<td><input type="checkbox" class="checkbox"></td>
+					<td>&nbsp;</td>
+					<td colspan="6">&nbsp;</td>
+					<td colspan="2">The nations are desolate [Deu 32:43]</td>
+					<td>&nbsp;</td>
+					<td colspan="2">The earth is healed [Deu 32:39]</td>
+				</tr>
+
+
+				<tr class="tdsubhead The_Sons_of_God" value="The_Sons_of_God">
+					<td>The sons of God<input type="checkbox" class="checkbox"></td>
+					<td>&nbsp;</td>
+					<td colspan="6">The sons of God are placed over the nations [Deu 32:8]</td>
+					<td colspan="5">All angels worship Yahweh [Deu 32:43 <font>Septuagint. Cf., Heb 1:6</font>
+						<font>]</font>
+					</td>
+				</tr>
+				<tr class="The_Sons_of_God">
+					<td><input type="checkbox" class="checkbox"></td>
+					<td>&nbsp;</td>
+					<td colspan="6">&nbsp;</td>
+					<td colspan="5">New sons of God [Deu 32:43 <font>Septuagint. Cf., Heb 1:6</font>
+						<font>]</font>
+					</td>
+				</tr>
+
+
+				<tr class="tdsubhead The_Dead" value="The_Dead">
+					<td>The Dead<br><input type="checkbox" class="checkbox"></td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>(First)<font>Resurrection of the dead [Deu 32:39]</font>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>(Last)<font>Resurrection of the dead [Deu 32:39]</font>
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="The_Dead">
+					<td><input type="checkbox" class="checkbox"></td>
+					<td colspan="10">The fire of Yahweh’s wrath is kindled and burns <font>even </font>
+						<font>in Hades [Deu
+							32:22; Luk 16:22-25]</font>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div id="details" style="position:sticky; bottom: 0; padding-top: 10px; background-color: beige; border-top: 2px solid; max-height: 300px; overflow: auto;">
+		<div class="detailsIsrael" style="display: none">
+			<h2>ISRAEL</h2>
+			<p>
+				Moses asked the elders of the people to assemble before him and told them he knew that the people of Israel would abandon God and in so doing, bring disaster upon themselves [Deu 31:28-30]. Deuteronomy 32 is the song (prophecy) he recited to the elders.
+				“...I know how rebellious and stiffnecked you are. If you have been rebellious against the Lord while I am still alive and with you, how much more will you rebel after I die! 28Assemble before me all the elders of your tribes and all your officials, so that I can speak these words in their hearing and call heaven and earth to testify against them. 29For I know that after my death you are sure to become utterly corrupt and to turn from the way I have commanded you. In days to come, disaster will fall upon you because you will do evil in the sight of the Lord and provoke him to anger by what your hands have made.” 30And Moses recited the words of this song from beginning to end in the hearing of the whole assembly of Israel:” [Deu 31:27-30]
+				The prophecy of Moses recorded in Deuteronomy 32 is all about the rise, fall and restoration of Israel. In this prophecy, Moses speaks of the fact that Israel will sin against God, abandoning him and serving idols. He also, more importantly, declares what God will do in response to their unfaithfulness, having been provoked to jealousy and anger and what God would do and not do for the sake of his name.
+				We here try to breakdown the prophecy, laying out its main characters, conflicts and events (among other things).
+			</p>
+		</div>
+		<div class="detailsyahweh" style="display: none">
+			<h2>YAHWEH</h2>
+			<p>
+				Moses asked the elders of the people to assemble before him and told them he knew that the people of Israel would abandon God and in so doing, bring disaster upon themselves [Deu 31:28-30]. Deuteronomy 32 is the song (prophecy) he recited to the elders.
+				“...I know how rebellious and stiffnecked you are. If you have been rebellious against the Lord while I am still alive and with you, how much more will you rebel after I die! 28Assemble before me all the elders of your tribes and all your officials, so that I can speak these words in their hearing and call heaven and earth to testify against them. 29For I know that after my death you are sure to become utterly corrupt and to turn from the way I have commanded you. In days to come, disaster will fall upon you because you will do evil in the sight of the Lord and provoke him to anger by what your hands have made.” 30And Moses recited the words of this song from beginning to end in the hearing of the whole assembly of Israel:” [Deu 31:27-30]
+				The prophecy of Moses recorded in Deuteronomy 32 is all about the rise, fall and restoration of Israel. In this prophecy, Moses speaks of the fact that Israel will sin against God, abandoning him and serving idols. He also, more importantly, declares what God will do in response to their unfaithfulness, having been provoked to jealousy and anger and what God would do and not do for the sake of his name.
+				We here try to breakdown the prophecy, laying out its main characters, conflicts and events (among other things).
+			</p>
+		</div>
+		<div class="detailsYahweh’s_Wrath" style="display: none">
+			<h2>YAHWEH'S WRATH</h2>
+
+			<p>
+				Moses asked the elders of the people to assemble before him and told them he knew that the people of Israel would abandon God and in so doing, bring disaster upon themselves [Deu 31:28-30]. Deuteronomy 32 is the song (prophecy) he recited to the elders.
+				“...I know how rebellious and stiffnecked you are. If you have been rebellious against the Lord while I am still alive and with you, how much more will you rebel after I die! 28Assemble before me all the elders of your tribes and all your officials, so that I can speak these words in their hearing and call heaven and earth to testify against them. 29For I know that after my death you are sure to become utterly corrupt and to turn from the way I have commanded you. In days to come, disaster will fall upon you because you will do evil in the sight of the Lord and provoke him to anger by what your hands have made.” 30And Moses recited the words of this song from beginning to end in the hearing of the whole assembly of Israel:” [Deu 31:27-30]
+				The prophecy of Moses recorded in Deuteronomy 32 is all about the rise, fall and restoration of Israel. In this prophecy, Moses speaks of the fact that Israel will sin against God, abandoning him and serving idols. He also, more importantly, declares what God will do in response to their unfaithfulness, having been provoked to jealousy and anger and what God would do and not do for the sake of his name.
+				We here try to breakdown the prophecy, laying out its main characters, conflicts and events (among other things).
+			</p>
+
+			<p> Moses asked the elders of the people to assemble before him and told them he knew that the people of Israel would abandon God and in so doing, bring disaster upon themselves [Deu 31:28-30]. Deuteronomy 32 is the song (prophecy) he recited to the elders.
+				“...I know how rebellious and stiffnecked you are. If you have been rebellious against the Lord while I am still alive and with you, how much more will you rebel after I die! 28Assemble before me all the elders of your tribes and all your officials, so that I can speak these words in their hearing and call heaven and earth to testify against them. 29For I know that after my death you are sure to become utterly corrupt and to turn from the way I have commanded you. In days to come, disaster will fall upon you because you will do evil in the sight of the Lord and provoke him to anger by what your hands have made.” 30And Moses recited the words of this song from beginning to end in the hearing of the whole assembly of Israel:” [Deu 31:27-30]
+				The prophecy of Moses recorded in Deuteronomy 32 is all about the rise, fall and restoration of Israel. In this prophecy, Moses speaks of the fact that Israel will sin against God, abandoning him and serving idols. He also, more importantly, declares what God will do in response to their unfaithfulness, having been provoked to jealousy and anger and what God would do and not do for the sake of his name.
+				We here try to breakdown the prophecy, laying out its main characters, conflicts and events (among other things).
+			</p>
+			<p>
+				Moses asked the elders of the people to assemble before him and told them he knew that the people of Israel would abandon God and in so doing, bring disaster upon themselves [Deu 31:28-30]. Deuteronomy 32 is the song (prophecy) he recited to the elders.
+				“...I know how rebellious and stiffnecked you are. If you have been rebellious against the Lord while I am still alive and with you, how much more will you rebel after I die! 28Assemble before me all the elders of your tribes and all your officials, so that I can speak these words in their hearing and call heaven and earth to testify against them. 29For I know that after my death you are sure to become utterly corrupt and to turn from the way I have commanded you. In days to come, disaster will fall upon you because you will do evil in the sight of the Lord and provoke him to anger by what your hands have made.” 30And Moses recited the words of this song from beginning to end in the hearing of the whole assembly of Israel:” [Deu 31:27-30]
+				The prophecy of Moses recorded in Deuteronomy 32 is all about the rise, fall and restoration of Israel. In this prophecy, Moses speaks of the fact that Israel will sin against God, abandoning him and serving idols. He also, more importantly, declares what God will do in response to their unfaithfulness, having been provoked to jealousy and anger and what God would do and not do for the sake of his name.
+				We here try to breakdown the prophecy, laying out its main characters, conflicts and events (among other things).
+			</p>
+			<p> Moses asked the elders of the people to assemble before him and told them he knew that the people of Israel would abandon God and in so doing, bring disaster upon themselves [Deu 31:28-30]. Deuteronomy 32 is the song (prophecy) he recited to the elders.
+				“...I know how rebellious and stiffnecked you are. If you have been rebellious against the Lord while I am still alive and with you, how much more will you rebel after I die! 28Assemble before me all the elders of your tribes and all your officials, so that I can speak these words in their hearing and call heaven and earth to testify against them. 29For I know that after my death you are sure to become utterly corrupt and to turn from the way I have commanded you. In days to come, disaster will fall upon you because you will do evil in the sight of the Lord and provoke him to anger by what your hands have made.” 30And Moses recited the words of this song from beginning to end in the hearing of the whole assembly of Israel:” [Deu 31:27-30]
+				The prophecy of Moses recorded in Deuteronomy 32 is all about the rise, fall and restoration of Israel. In this prophecy, Moses speaks of the fact that Israel will sin against God, abandoning him and serving idols. He also, more importantly, declares what God will do in response to their unfaithfulness, having been provoked to jealousy and anger and what God would do and not do for the sake of his name.
+				We here try to breakdown the prophecy, laying out its main characters, conflicts and events (among other things).
+			</p>
+			<h2>YAHWEH'S WRATH</h2>
+
+			<p>
+				Moses asked the elders of the people to assemble before him and told them he knew that the people of Israel would abandon God and in so doing, bring disaster upon themselves [Deu 31:28-30]. Deuteronomy 32 is the song (prophecy) he recited to the elders.
+				“...I know how rebellious and stiffnecked you are. If you have been rebellious against the Lord while I am still alive and with you, how much more will you rebel after I die! 28Assemble before me all the elders of your tribes and all your officials, so that I can speak these words in their hearing and call heaven and earth to testify against them. 29For I know that after my death you are sure to become utterly corrupt and to turn from the way I have commanded you. In days to come, disaster will fall upon you because you will do evil in the sight of the Lord and provoke him to anger by what your hands have made.” 30And Moses recited the words of this song from beginning to end in the hearing of the whole assembly of Israel:” [Deu 31:27-30]
+				The prophecy of Moses recorded in Deuteronomy 32 is all about the rise, fall and restoration of Israel. In this prophecy, Moses speaks of the fact that Israel will sin against God, abandoning him and serving idols. He also, more importantly, declares what God will do in response to their unfaithfulness, having been provoked to jealousy and anger and what God would do and not do for the sake of his name.
+				We here try to breakdown the prophecy, laying out its main characters, conflicts and events (among other things).
+			</p>
+
+			<p> Moses asked the elders of the people to assemble before him and told them he knew that the people of Israel would abandon God and in so doing, bring disaster upon themselves [Deu 31:28-30]. Deuteronomy 32 is the song (prophecy) he recited to the elders.
+				“...I know how rebellious and stiffnecked you are. If you have been rebellious against the Lord while I am still alive and with you, how much more will you rebel after I die! 28Assemble before me all the elders of your tribes and all your officials, so that I can speak these words in their hearing and call heaven and earth to testify against them. 29For I know that after my death you are sure to become utterly corrupt and to turn from the way I have commanded you. In days to come, disaster will fall upon you because you will do evil in the sight of the Lord and provoke him to anger by what your hands have made.” 30And Moses recited the words of this song from beginning to end in the hearing of the whole assembly of Israel:” [Deu 31:27-30]
+				The prophecy of Moses recorded in Deuteronomy 32 is all about the rise, fall and restoration of Israel. In this prophecy, Moses speaks of the fact that Israel will sin against God, abandoning him and serving idols. He also, more importantly, declares what God will do in response to their unfaithfulness, having been provoked to jealousy and anger and what God would do and not do for the sake of his name.
+				We here try to breakdown the prophecy, laying out its main characters, conflicts and events (among other things).
+			</p>
+			<p>
+				Moses asked the elders of the people to assemble before him and told them he knew that the people of Israel would abandon God and in so doing, bring disaster upon themselves [Deu 31:28-30]. Deuteronomy 32 is the song (prophecy) he recited to the elders.
+				“...I know how rebellious and stiffnecked you are. If you have been rebellious against the Lord while I am still alive and with you, how much more will you rebel after I die! 28Assemble before me all the elders of your tribes and all your officials, so that I can speak these words in their hearing and call heaven and earth to testify against them. 29For I know that after my death you are sure to become utterly corrupt and to turn from the way I have commanded you. In days to come, disaster will fall upon you because you will do evil in the sight of the Lord and provoke him to anger by what your hands have made.” 30And Moses recited the words of this song from beginning to end in the hearing of the whole assembly of Israel:” [Deu 31:27-30]
+				The prophecy of Moses recorded in Deuteronomy 32 is all about the rise, fall and restoration of Israel. In this prophecy, Moses speaks of the fact that Israel will sin against God, abandoning him and serving idols. He also, more importantly, declares what God will do in response to their unfaithfulness, having been provoked to jealousy and anger and what God would do and not do for the sake of his name.
+				We here try to breakdown the prophecy, laying out its main characters, conflicts and events (among other things).
+			</p>
+			<p> Moses asked the elders of the people to assemble before him and told them he knew that the people of Israel would abandon God and in so doing, bring disaster upon themselves [Deu 31:28-30]. Deuteronomy 32 is the song (prophecy) he recited to the elders.
+				“...I know how rebellious and stiffnecked you are. If you have been rebellious against the Lord while I am still alive and with you, how much more will you rebel after I die! 28Assemble before me all the elders of your tribes and all your officials, so that I can speak these words in their hearing and call heaven and earth to testify against them. 29For I know that after my death you are sure to become utterly corrupt and to turn from the way I have commanded you. In days to come, disaster will fall upon you because you will do evil in the sight of the Lord and provoke him to anger by what your hands have made.” 30And Moses recited the words of this song from beginning to end in the hearing of the whole assembly of Israel:” [Deu 31:27-30]
+				The prophecy of Moses recorded in Deuteronomy 32 is all about the rise, fall and restoration of Israel. In this prophecy, Moses speaks of the fact that Israel will sin against God, abandoning him and serving idols. He also, more importantly, declares what God will do in response to their unfaithfulness, having been provoked to jealousy and anger and what God would do and not do for the sake of his name.
+				We here try to breakdown the prophecy, laying out its main characters, conflicts and events (among other things).
+			</p>
+		</div>
+	</div>
+
+</body>
+<script src="jscript/script.js"></script></html>

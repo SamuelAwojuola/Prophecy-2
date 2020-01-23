@@ -1,0 +1,55 @@
+	<style > td {
+		border: 1px solid;
+		padding: 5px;
+	}
+
+	.col-1 {
+		background-color: antiquewhite;
+		font: italic bold 12px Georgia, serif;
+	}
+
+	.col-2 {
+		background-color: darkturquoise;
+		font-weight: bolder;
+	}
+
+	.col-3 {
+		background-color: aquamarine;
+		text-align: right;
+	}
+
+	.col-4 {
+		background-color: burlywood;
+		text-transform: uppercase;
+	}
+
+	.col-5 {
+		background-color: greenyellow;
+		color: darkred;
+	}
+
+	.col-6 {
+		background-color: pink;
+		border: 2px solid;
+	}
+
+	.col-7 {
+		background-color: beige;
+		border-style: dashed;
+	}
+
+	.col-8 {
+		background-color: azure;
+		border-radius: 4px;
+	}
+
+	.col-9 {
+		background-color: aqua;
+		font-style: italic;
+	}
+
+	.col-10 {
+		background-color: antiquewhite;
+	}
+
+	</style >

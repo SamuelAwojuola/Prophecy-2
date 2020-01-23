@@ -1,0 +1,302 @@
+body {
+	font-size: 12.5px;
+	font-family: "Trebuchet MS", Verdana, sans-serif;
+	background-color: beige;
+	/*  background-color: bisque; */
+}
+
+#guideheadings > h4:not(:first-child) {
+	display: none;
+}
+
+#tablemenuDIV {
+	position: relative;
+	z-index: -1;
+	display: none;
+	border-bottom: 2px solid grey;
+	margin-left: -10px;
+	margin-right: -10px;
+	background-color: rgba(245, 245, 220, 0.97);
+}
+
+#tablemenuDIV > ol {
+	margin: 8px;
+	list-style-type: none;
+	padding-left: 3px;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+#tablemenuDIV > ol > li {
+	margin-right: 20px
+}
+
+.timelineTableContainer {
+	overflow: auto;
+	margin-top: 3px;
+	display: none;
+	/*this is dependent on the script to make it visible*/
+	width: 100%;
+	height: 100%;
+}
+
+.timelineTable {
+	width: 100%;
+	min-height: 50px;
+}
+
+.timelineTable tbody tr:not(:first-child) {
+	display: none;
+}
+
+.timelineTable tbody tr:first-child {
+	border-top: 5px solid;
+	border-bottom: 5px solid;
+}
+
+.timelineTable tbody tr:last-child {
+	border-bottom: 5px solid;
+}
+
+th {
+	font-size: 15px;
+}
+
+.format,
+a {
+	color: #480000;
+	/*    font-size: .9em;*/
+	font-size: 12px;
+}
+
+.tdsubhead {
+	border-top: 3px solid;
+}
+
+/*Button Styling*/
+.navbuttons {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid #bebebe;
+	color: black;
+	font-size: 10px;
+	margin: 5px 0 5px 0;
+	/*	padding: 0;*/
+	/*	z-index: 50;*/
+	font-weight: bold;
+	font-style: ;
+	float: left;
+	box-shadow: 0px 0.5px 0.5px 0.5px #3b3b3b;
+}
+
+.navbuttons2 {
+	/*	height: 15px;*/
+	/*	float: none;*/
+	/*	clear: right;*/
+	margin: 0;
+}
+
+.navbuttons:active {
+	background-color: beige;
+	box-shadow: 0;
+}
+
+.navbuttons:not(#tablemenu #tablemenuX) {
+	min-width: 100px;
+}
+
+.navbuttons:not(#mybutton) {
+	max-width: 100px;
+	height: 15px;
+	overflow: hidden;
+}
+
+#showall,
+#summary {
+	display: none;
+}
+
+tr:first-child,
+th {
+	background-color: #ddc474;
+}
+
+tr:nth-child(even) {
+	background-color: #fffb9f;
+}
+
+tr {
+	background-color: beige
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	empty-cells: hide;
+	font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+table,
+td,
+th {
+	border: 1px solid #ddd;
+	text-align: left;
+}
+
+th,
+td {
+	padding: 8px;
+	border-bottom: 1px solid #ddd;
+	min-width: 50px;
+	/*    min-height: 25px;*/
+	border-left: 2.5px solid #b1b1b1;
+	text-align: center;
+}
+
+tr td:last-child,
+tr th:last-child {
+	border-right: 2.5px solid #b1b1b1;
+}
+
+tr td:first-child,
+tr th:first-child {
+	min-width: 2.5px;
+	background-color: ;
+	text-align: center;
+	font-style: italic;
+	text-align: right;
+}
+
+tr td:first-child:hover,
+tr th:first-child:hover {
+	/*	background-color: lemonchiffon;*/
+}
+
+tr th:first-child {
+	width: 5px;
+}
+
+tr {
+	/*    height: 50px;*/
+	font-size: 15px;
+}
+
+tr:hover {
+	background-color: #ffffff;
+}
+
+th:hover,
+td:hover {
+	background-color: rgba(235, 225, 169, 0.58);
+	color: #862a2a;
+}
+
+td:empty {
+	background-color: black;
+}
+
+
+.highlight {
+	background-color: yellow;
+}
+
+.bold {
+	font-style: italic;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+
+/*for ANDROID phones*/
+@media only screen and (max-device-width : 768px) {
+
+	table {}
+
+	.timelineTable,
+	table,
+	tr,
+	td {
+		font-size: 25.5px;
+	}
+
+	body {
+		font-size: 30px;
+		text-align: center;
+		background-color: beige;
+	}
+
+	th {
+		font-size: 30px;
+	}
+
+	#mybutton {
+		background-color: rgba(255, 255, 255, 0);
+		border: 0px dotted white;
+		color: black;
+		font-size: 30px;
+		margin: 0;
+		padding-bottom: 10px;
+		z-index: 50;
+		font-weight: bold;
+		font-style: oblique;
+		float: right;
+	}
+
+	a {
+		color: #480000;
+		/*    font-size: .9em;*/
+		font-size: 27px;
+	}
+
+	tr th:first-child {
+		font-size: 25px;
+	}
+
+}
+
+/*for IPAD*/
+@media only screen and (max-device-width : 1024px) {
+
+	.timelineTable,
+	table,
+	tr,
+	td {
+		font-size: 30px;
+	}
+
+	body {
+		font-size: 35px;
+		text-align: center;
+		background-color: beige;
+	}
+
+	th {
+		font-size: 35px;
+	}
+
+
+	#mybutton {
+		background-color: rgba(255, 255, 255, 0);
+		border: 0px dotted white;
+		color: black;
+		font-size: 30px;
+		margin: 0;
+		padding-bottom: 10px;
+		z-index: 50;
+		font-weight: bold;
+		font-style: oblique;
+	}
+
+	a {
+		color: #480000;
+		/*    font-size: .9em;*/
+		font-size: 27px;
+	}
+
+	tr th:first-child {
+		font-size: 25px;
+	}
+
+}
