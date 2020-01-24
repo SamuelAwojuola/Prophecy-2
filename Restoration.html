@@ -2,113 +2,135 @@
 <html>
 
 <head>
-    <title>Restoration of All Things</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="jquery-3.4.1.min.js"></script>
-    <script src="https://www.biblegateway.com/public/link-to-us/tooltips/bglinks.js" type="text/javascript"></script>
-    <script type="text/javascript" src="jquery.tablehover.js"></script>
-
-    <link href="style.css" rel="stylesheet">
-    <link href="hoverStyle.css" rel="stylesheet">
+	<title>Restoration of All Things</title>
+	<link rel="import" href="header.html">
 
 </head>
 
 <body>
-    <button id="mybutton">Toggle</button>
-    <!--    <input type=checkbox>-->
-    <div class="timelineTableContainer">
-<!--
-       <table class="timelineTable" id="timelineTable">
-       <tbody>
-       <tr><th>Mat24<input type="checkbox" id="checkall"></th>
-       <tr><td><input type="checkbox" class="checkbox"></td>
--->
-        <table class="xxx">
-            <tbody>
-                <tr>
-                    <td align="center"><span lang="EN-US">CHRIST</span></td>
-                    <td><span lang="EN-US">Christ DIED [Act
-                        3:13-15,17-18]</span></td>
-                    <td><span lang="EN-US">Christ
-                        GLORIFIED—raised from the dead and returns to heaven [Act 3:13,15]</span></td>
-                    <td rowspan="7" align="center"><span lang="EN-US">RESTORATION OF ISRAEL</span></td>
-                    <td><span lang="EN-US">Christ is SENT
-                        FIRST TO THE JEWS, through the preaching of the Gospel by his servants the
-                        apostles [Act 3:26]</span></td>
-                    <td><span lang="EN-US">&nbsp;</span></td>
-                    <td><span lang="EN-US">&nbsp;</span></td>
-                    <td rowspan="7" align="center"><span lang="EN-US">FIRST RESURRECTION</span></td>
-                    <td><span lang="EN-US">&nbsp;</span></td>
-                    <td><span lang="EN-US">&nbsp;</span></td>
-                    <td><span lang="EN-US">&nbsp;</span></td>
-                    <td><span lang="EN-US">Christ, who has
-                        been appointed for Israel, is SENT [Act 3:20 cf., Deu 18:15-19]</span></td>
-                    <td><span lang="EN-US">&nbsp;</span></td>
-                </tr>
-                <tr>
-                    <td rowspan="2" align="center"><span lang="EN-US">ISRAEL</span></td>
-                    <td rowspan="6" align="center"><span lang="EN-US">CHRIST’S RESURRECTION</span></td>
-                    <td rowspan="2"><span lang="EN-US">&nbsp;</span></td>
-                    <td><span lang="EN-US">The gospel is
-                        preached first to the Jews<span>&nbsp; </span>[Act 3:26]</span></td>
-                    <td rowspan="2"><span lang="EN-US">&nbsp;</span></td>
-                    <td><span lang="EN-US">All Israel
-                        repents [Act 3:19,26]</span></td>
-                    <td rowspan="2"><span lang="EN-US">Israel’s sins are wiped off [Act
-                        3:19]</span></td>
-                    <td rowspan="2"><span lang="EN-US">Times of refreshing come for
-                        Israel [Act 3:19]</span></td>
-                    <td rowspan="2"><span lang="EN-US">&nbsp;</span></td>
-                    <td rowspan="2"><span lang="EN-US">&nbsp;</span></td>
-                    <td rowspan="2"><span lang="EN-US">All nations are blessed [Act
-                        3:25]</span></td>
-                </tr>
-                <tr>
-                    <td><span lang="EN-US">Israel hardened in part [Rom 11:25]</span></td>
-                    <td><span lang="EN-US">Israel is no
-                        longer hardened [Rom 11:26]</span></td>
-                </tr>
-                <tr>
-                    <td align="center"><span lang="EN-US">GENTILES</span></td>
-                    <td><span lang="EN-US">&nbsp;</span></td>
-                    <td><span lang="EN-US">&nbsp;</span></td>
-                    <td><span lang="EN-US">Full number of
-                        Gentles have come in [Rom 11:25; Rev 5:9]</span></td>
-                    <td><span lang="EN-US">Some Gentiles are
-                        still hardened</span></td>
-                    <td><span lang="EN-US">&nbsp;</span></td>
-                    <td><span lang="EN-US">&nbsp;</span></td>
-                    <td><span lang="EN-US">RESTORATION OF
-                        THE GENTILES</span></td>
-                    <td><span lang="EN-US">The Gentiles
-                        repent</span></td>
-                    <td><span lang="EN-US">&nbsp;</span></td>
-                </tr>
-                <tr>
-                    <td rowspan="3" align="center"><span lang="EN-US">CHURCH</span></td>
-                    <td rowspan="3"><span lang="EN-US">&nbsp;</span></td>
-                    <td rowspan="3"><span lang="EN-US">&nbsp;</span></td>
-                    <td rowspan="3"><span lang="EN-US">&nbsp;</span></td>
-                    <td><span lang="EN-US">The Gospel is
-                        preached to all men</span></td>
-                    <td rowspan="3"><span lang="EN-US">&nbsp;</span></td>
-                    <td rowspan="3"><span lang="EN-US">&nbsp;</span></td>
-                    <td rowspan="3"><span lang="EN-US">&nbsp;</span></td>
-                    <td rowspan="3"><span lang="EN-US">&nbsp;</span></td>
-                    <td rowspan="3"><span lang="EN-US">&nbsp;</span></td>
-                </tr>
-                <tr>
-                    <td><span lang="EN-US">Some Jews join the Church</span></td>
-                </tr>
-                <tr>
-                    <td><span lang="EN-US">Some Gentiles join the Church</span></td>
-                </tr>
-            </tbody>
-        </table>
+	<h2 class="pagetitleclass">Restoration</h2>
+	<nav class="titlebar" id="titlebar"></nav>
 
+	<!--Menu For the Timeline Table-->
 
-    </div>
+	<div style="position: sticky; top: 0; z-index: -1;">
+		<div id="tablemenuDIV">
+			<ol>
+				<li style="width:;">
+					<button id="tablemenuX" class="navbuttons" style="font-weight: bolder; width: auto;padding: 0 5px;">&#9932;</button>
+					<button id="tablemenubutton1" class="navbuttons">SHOW ALL</button>
+					<button id="tablemenubutton2" class="navbuttons" style="display: none">HIDE ALL</button>
+				</li>
+
+				<!--THIS IS A MENU FOR THE TABLE ROWS (SEE DEUTERONOMY-32 FOR EXAMPLE)-->
+
+				<li><input type="checkbox" class="tablemenu" id="christ" value="christ"><label for="christ">Christ</label></li>
+				<li><input type="checkbox" class="tablemenu" id="israel" value="israel"><label for="israel">Israel</label></li>
+
+				<li><input type="checkbox" class="tablemenu" id="gentiles" value="gentiles"><label for="gentiles">Gentiles</label></li>
+				<li><input type="checkbox" class="tablemenu" id="church" value="church"><label for="church">Church</label></li>
+
+			</ol>
+		</div>
+		<div style="display: inline-block; width: 100%; padding-top: 5px;">
+			<div>
+				<button id="tablemenu" class="navbuttons navbuttons2">&#9776;</button>
+				<button id="showall" class="navbuttons navbuttons2">Show All</button>
+				<button id="showmain" class="navbuttons navbuttons2">Main Time</button>
+				<button id="summary" class="navbuttons navbuttons2">Summary</button>
+			</div>
+		</div>
+
+	</div>
+
+	<!--TIMELINE TIMETABLE-->
+
+	<div class="timelineTableContainer">
+		<table class="timelineTable" id="timelineTable">
+			<tbody>
+				<tr class="tdsubhead christ" value="christ">
+					<td align="center">CHRIST<br><input type="checkbox" class="checkbox"></td>
+
+					<td>Christ DIED [Act
+						3:13-15,17-18]</td>
+					<td rowspan="7" align="center">CHRIST’S RESURRECTION</td>
+					<td>Christ
+						GLORIFIED—raised from the dead and returns to heaven [Act 3:13,15]</td>
+					<td rowspan="7" align="center">RESTORATION OF ISRAEL</td>
+					<td>Christ is SENT
+						FIRST TO THE JEWS, through the preaching of the Gospel by his servants the
+						apostles [Act 3:26]</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td rowspan="7" align="center">FIRST RESURRECTION</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>Christ, who has
+						been appointed for Israel, is SENT [Act 3:20 cf., Deu 18:15-19]</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="tdsubhead israel" value="israel">
+					<td rowspan="2" align="center">ISRAEL<br><input type="checkbox" class="checkbox"></td>
+					<td>&nbsp;</td>
+					<td rowspan="2">&nbsp;</td>
+					<td>The gospel is preached first to the Jews [Act 3:26]</td>
+					<td rowspan="2">&nbsp;</td>
+					<td>All Israel
+						repents [Act 3:19,26]</td>
+					<td rowspan="2">Israel’s sins are wiped off [Act
+						3:19]</td>
+					<td rowspan="2">Times of refreshing come for
+						Israel [Act 3:19]</td>
+					<td rowspan="2">&nbsp;</td>
+					<td rowspan="2">&nbsp;</td>
+					<td rowspan="2">All nations are blessed [Act
+						3:25]</td>
+				</tr>
+				<tr class="israel">
+					<td>&nbsp;</td>
+					<td>Israel hardened in part [Rom 11:25]</td>
+					<td>Israel is no
+						longer hardened [Rom 11:26]</td>
+				</tr>
+				<tr class="tdsubhead gentiles" value="gentiles">
+					<td align="center">GENTILES<br><input type="checkbox" class="checkbox"></td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>Full number of
+						Gentles have come in [Rom 11:25; Rev 5:9]</td>
+					<td>Some Gentiles are
+						still hardened</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>RESTORATION OF
+						THE GENTILES</td>
+					<td>The Gentiles
+						repent</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="tdsubhead church" value="church">
+					<td rowspan="3" align="center">CHURCH<br><input type="checkbox" class="checkbox"></td>
+					<td rowspan="3">&nbsp;</td>
+					<td rowspan="3">&nbsp;</td>
+					<td rowspan="3">&nbsp;</td>
+					<td>The Gospel is
+						preached to all men</td>
+					<td rowspan="3">&nbsp;</td>
+					<td rowspan="3">&nbsp;</td>
+					<td rowspan="3">&nbsp;</td>
+					<td rowspan="3">&nbsp;</td>
+					<td rowspan="3">&nbsp;</td>
+				</tr>
+				<tr class="church">
+					<td>Some Jews join the Church</td>
+				</tr>
+				<tr class="church">
+					<td>Some Gentiles join the Church</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
 </body>
-    <script src="/js/script.js"></script>
-
-</html>
+<script src="jscript/script.js"></script></html>

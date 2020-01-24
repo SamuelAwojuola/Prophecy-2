@@ -3,23 +3,48 @@
 
 <head>
 	<title>1&2Thess</title>
-	<script src="jscript/jquery-3.4.1.min.js"></script>
-	<script src="https://www.biblegateway.com/public/link-to-us/tooltips/bglinks.js" type="text/javascript"></script>
-	<script type="text/javascript" src="jscript/jquery.tablehover.js"></script>
-
-	<link href="style/style.css" rel="stylesheet">
-	<link href="style/hoverStyle.css" rel="stylesheet">
-	<link href="style/navigation.css" rel="stylesheet">
+	<link rel="import" href="header.html">
 
 </head>
 
 <body>
-	<h2>1&2-Thessalonians</h2>
+	<h2 class="pagetitleclass">1&2-Thessalonians</h2>
 	<nav class="titlebar" id="titlebar"></nav>
-	<!--<input type=checkbox>-->
+
+	<!--Menu For the Timeline Table-->
+
+	<div style="position: sticky; top: 0; z-index: -1;">
+		<div id="tablemenuDIV">
+			<ol>
+				<li style="width:;">
+					<button id="tablemenuX" class="navbuttons" style="font-weight: bolder; width: auto;padding: 0 5px;">&#9932;</button>
+					<button id="tablemenubutton1" class="navbuttons">SHOW ALL</button>
+					<button id="tablemenubutton2" class="navbuttons" style="display: none">HIDE ALL</button>
+				</li>
+
+				<!--THIS IS A MENU FOR THE TABLE ROWS (SEE DEUTERONOMY-32 FOR EXAMPLE)-->
+
+				<!--
+				<li><input type="checkbox" class="tablemenu" id="aaaa" value="aaaa"><label for="aaaa">Yahweh</label></li>
+				<li><input type="checkbox" class="tablemenu" id="bbbb" value="bbbb"><label for="bbbb">Israel</label></li>
+-->
+			</ol>
+		</div>
+		<div style="display: inline-block; width: 100%; padding-top: 5px;">
+			<div>
+				<button id="tablemenu" class="navbuttons navbuttons2">&#9776;</button>
+				<button id="showall" class="navbuttons navbuttons2">Show All</button>
+				<button id="showmain" class="navbuttons navbuttons2">Main Time</button>
+				<button id="summary" class="navbuttons navbuttons2">Summary</button>
+			</div>
+		</div>
+
+	</div>
+
+	<!--TIMELINE TIMETABLE-->
+
 	<div class="timelineTableContainer">
 		<table class="timelineTable" id="timelineTable">
-			<button id="mybutton">Toggle</button>
 			<tbody>
 				<tr>
 					<th>1-Thess

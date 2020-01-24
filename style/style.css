@@ -43,6 +43,9 @@ body {
 	/*this is dependent on the script to make it visible*/
 	width: 100%;
 	height: 100%;
+	position: relative;
+	width: auto;
+	z-index: -10;
 }
 
 .timelineTable {

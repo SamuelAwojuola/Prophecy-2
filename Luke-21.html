@@ -2,71 +2,95 @@
 <html>
 
 <head>
-    <title>Luk21</title>
-    <script src="jscript/jquery-3.4.1.min.js"></script>
-    <script src="https://www.biblegateway.com/public/link-to-us/tooltips/bglinks.js" type="text/javascript"></script>
-    <script type="text/javascript" src="jscript/jquery.tablehover.js"></script>
-
-    <link href="style/style.css" rel="stylesheet">
-    <link href="style/hoverStyle.css" rel="stylesheet">
-    <link href="style/navigation.css" rel="stylesheet">
+	<title>Luk21</title>
+	<link rel="import" href="header.html">
 
 </head>
 
 <body>
-    <h2>Luke 21</h2>
-    <nav class="titlebar" id="titlebar"></nav>
-    <!--    <input type=checkbox>-->
-    <div class="timelineTableContainer">
-        <table class="timelineTable" id="timelineTable">
-            <button id="mybutton">Toggle</button>
-            <tbody>
-                <tr>
-                    <th>Luk 21:5-36<input type="checkbox" id="checkall"></th>
-                    <th>Disciples are persecuted, killed and become witness to kings and governors [Luk 21:12-17]</th>
-                    <th colspan="2">Jerusalem surrounded by armies and destroyed [Luk 21:20-24]</th>
-                    <th>Wars, earthquakes, fearful events and signs in the heavens [Luk 21:9-11]</th>
-                    <th>Signs in the sun, moon and stars and roaring and tossing of the sea and the heavenly bodies will be shaken [Luk 21:25-26]</th>
-                    <th>The Son of Man comes in a cloud with power and great glory [Luk 21:27]</th>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" class="checkbox"></td>
-                    <td>&nbsp;</td>
-                    <td colspan="2">These events are part of the events that will precede the wars and earthquakes… [Luk 21:12ff]</td>
-                    <td>&nbsp;</td>
-                    <td>These events are detached from the before events by the fact that they are very near the coming of the Son of Man [Luk 21:28,31]</td>
-                    <td>The Kingdom of God comes [Luk 21:31]</td>
-                </tr>
+	<h2 class="pagetitleclass">Luke 21</h2>
+	<nav class="titlebar" id="titlebar"></nav>
 
-                <tr>
-                    <td><input type="checkbox" class="checkbox"></td>
-                    <td>Disciples are betrayed, persecuted, killed and become witnesses to kings and governors [Luk 21:12-17]</td>
-                    <td>Jerusalem is surrounded by armies [Luk 21:20]</td>
-                    <td>The people of Jerusalem fall by the sword and are taken as captives to the all nations [Luk 21:23-24]</td>
-                    <td>Wars, great earthquakes, fearful events, and signs in the heavens [Luk 21:9-11]
-                        <p>The end is not immediate [Luk 21:9]</p>
-                    </td>
-                    <td>Signs in the sun, moon and stars and roaring and tossing of the sea and the heavenly bodies will be shaken [Luk 21:25-26]</td>
-                    <td>The Son of Man is seen coming in a cloud with power and great glory [Luk21:27]</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" class="checkbox"></td>
-                    <td>&nbsp;</td>
-                    <td>Disciples in Judea flee [Luk 21:21]</td>
-                    <td>Jerusalem is punished [Luk 21:22]</td>
-                    <td>Deceivers come claiming the time is near [Luk 21:8]</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" class="checkbox"></td>
-                    <td colspan="5">Time of the Gentiles [Luk 21:24]</td>
-                    <td>No more time of the Gentiles [Luk 21:24]</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+	<!--Menu For the Timeline Table-->
+
+	<div style="position: sticky; top: 0; z-index: -1;">
+		<div id="tablemenuDIV">
+			<ol>
+				<li style="width:;">
+					<button id="tablemenuX" class="navbuttons" style="font-weight: bolder; width: auto;padding: 0 5px;">&#9932;</button>
+					<button id="tablemenubutton1" class="navbuttons">SHOW ALL</button>
+					<button id="tablemenubutton2" class="navbuttons" style="display: none">HIDE ALL</button>
+				</li>
+
+				<!--THIS IS A MENU FOR THE TABLE ROWS (SEE DEUTERONOMY-32 FOR EXAMPLE)-->
+
+				<!--
+				<li><input type="checkbox" class="tablemenu" id="aaaa" value="aaaa"><label for="aaaa">Yahweh</label></li>
+				<li><input type="checkbox" class="tablemenu" id="bbbb" value="bbbb"><label for="bbbb">Israel</label></li>
+-->
+			</ol>
+		</div>
+		<div style="display: inline-block; width: 100%; padding-top: 5px;">
+			<div>
+				<button id="tablemenu" class="navbuttons navbuttons2">&#9776;</button>
+				<button id="showall" class="navbuttons navbuttons2">Show All</button>
+				<button id="showmain" class="navbuttons navbuttons2">Main Time</button>
+				<button id="summary" class="navbuttons navbuttons2">Summary</button>
+			</div>
+		</div>
+
+	</div>
+
+	<!--TIMELINE TIMETABLE-->
+
+	<div class="timelineTableContainer">
+		<table class="timelineTable" id="timelineTable">
+			<button id="mybutton">Toggle</button>
+			<tbody>
+				<tr>
+					<th>Luk 21:5-36<input type="checkbox" id="checkall"></th>
+					<th>Disciples are persecuted, killed and become witness to kings and governors [Luk 21:12-17]</th>
+					<th colspan="2">Jerusalem surrounded by armies and destroyed [Luk 21:20-24]</th>
+					<th>Wars, earthquakes, fearful events and signs in the heavens [Luk 21:9-11]</th>
+					<th>Signs in the sun, moon and stars and roaring and tossing of the sea and the heavenly bodies will be shaken [Luk 21:25-26]</th>
+					<th>The Son of Man comes in a cloud with power and great glory [Luk 21:27]</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="checkbox"></td>
+					<td>&nbsp;</td>
+					<td colspan="2">These events are part of the events that will precede the wars and earthquakes… [Luk 21:12ff]</td>
+					<td>&nbsp;</td>
+					<td>These events are detached from the before events by the fact that they are very near the coming of the Son of Man [Luk 21:28,31]</td>
+					<td>The Kingdom of God comes [Luk 21:31]</td>
+				</tr>
+
+				<tr>
+					<td><input type="checkbox" class="checkbox"></td>
+					<td>Disciples are betrayed, persecuted, killed and become witnesses to kings and governors [Luk 21:12-17]</td>
+					<td>Jerusalem is surrounded by armies [Luk 21:20]</td>
+					<td>The people of Jerusalem fall by the sword and are taken as captives to the all nations [Luk 21:23-24]</td>
+					<td>Wars, great earthquakes, fearful events, and signs in the heavens [Luk 21:9-11]
+						<p>The end is not immediate [Luk 21:9]</p>
+					</td>
+					<td>Signs in the sun, moon and stars and roaring and tossing of the sea and the heavenly bodies will be shaken [Luk 21:25-26]</td>
+					<td>The Son of Man is seen coming in a cloud with power and great glory [Luk21:27]</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="checkbox"></td>
+					<td>&nbsp;</td>
+					<td>Disciples in Judea flee [Luk 21:21]</td>
+					<td>Jerusalem is punished [Luk 21:22]</td>
+					<td>Deceivers come claiming the time is near [Luk 21:8]</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="checkbox"></td>
+					<td colspan="5">Time of the Gentiles [Luk 21:24]</td>
+					<td>No more time of the Gentiles [Luk 21:24]</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </body>
-<script src="jscript/script.js"></script>
-
-</html>
+<script src="jscript/script.js"></script></html>
