@@ -50,7 +50,7 @@ body {
 
 .timelineTable {
 	width: 100%;
-	min-height: 50px;
+	min-height: 70vh;
 }
 
 .timelineTable tbody tr:not(:first-child) {
@@ -125,7 +125,7 @@ tr th:last-child {
 
 tr td:first-child,
 tr th:first-child {
-	min-width: 2.5px;
+	width: 61px;
 	background-color: ;
 	text-align: center;
 	font-style: italic;
@@ -175,23 +175,28 @@ td:empty {
 /*for ANDROID phones*/
 @media only screen and (max-device-width : 768px) {
 
-	table {}
-
-	.timelineTable,
-	table,
-	tr,
-	td {
-		font-size: 25.5px;
-	}
-
 	body {
 		font-size: 30px;
 		text-align: center;
 		background-color: beige;
 	}
 
+	table {}
+
 	th {
 		font-size: 30px;
+	}
+
+	tr td:first-child,
+	tr th:first-child {
+		width: 170px;
+	}
+
+	.timelineTable,
+	table,
+	tr,
+	td {
+		font-size: 25.5px;
 	}
 
 	a {
@@ -209,21 +214,23 @@ td:empty {
 /*for IPAD*/
 @media only screen and (max-device-width : 1024px) {
 
-	.timelineTable,
-	table,
-	tr,
-	td {
-		font-size: 30px;
-	}
-
 	body {
 		font-size: 35px;
 		text-align: center;
 		background-color: beige;
 	}
 
-	th {
-		font-size: 35px;
+	.timelineTable,
+	table,
+	tr,
+	td {
+		font-size: 40px;
+	}
+
+	th,
+	td {
+		/*		font-size: 35px;*/
+		max-height: 100px;
 	}
 
 	a {

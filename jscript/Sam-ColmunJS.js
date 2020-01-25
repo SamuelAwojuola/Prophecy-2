@@ -68,12 +68,12 @@ $(document).ready(function () {
 	//NEXT BUTTON SHOWS PREVIOUS COLUMN
 	var next = 0;
 	var soloTD = customIndex + 1;
-	$("#nextBtn").click(function () {
+	$(".nextBtn").click(function () {
 		next = next + 1;
 		if (next < soloTD) {
 			var col2show = ".col-" + next;
-			$("td").hide();
-			// $("td").not("td:first-child").hide();
+			//			$("td").hide();
+			$("td").not("td:first-child").hide();
 			$(col2show).show();
 			$(col2show).attr("colspan", "1");
 
@@ -86,11 +86,11 @@ $(document).ready(function () {
 	});
 
 	//PREV BUTTON SHOWS PREVIOUS COLUMN
-	$("#prevBtn").click(function () {
+	$(".prevBtn").click(function () {
 		if (next > 1) {
 			var prevCol2show = ".col-" + --next;
-			$("td").hide();
-			//			$("td").not("td:first-child").hide();
+			//			$("td").hide();
+			$("td").not("td:first-child").hide();
 			$(prevCol2show).show();
 		}
 		if (next == 1) {
@@ -102,7 +102,7 @@ $(document).ready(function () {
 
 
 	//TO ADD CUSTOM CLASSES TO THE <TD>
-	$("#refreshBtn").click(function () {
+	$(".refreshBtn").click(function () {
 		TableRebuild();
 	});
 
