@@ -171,6 +171,12 @@ td:empty {
 	font-size: 15px;
 }
 
+#eventcounter {
+	float: right;
+	text-align: center;
+	display: none;
+}
+
 
 /*for ANDROID phones*/
 @media only screen and (max-device-width : 768px) {

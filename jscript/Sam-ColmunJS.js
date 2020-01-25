@@ -117,8 +117,37 @@ $(document).ready(function () {
 				$(TDee).attr("colspan", OrgColSpan);
 				$("td").show();
 				next = 0;
+				eventcounter = 0;
+				$("#eventcounter").hide();
 			};
 			ci = ci + 1;
 		}
 	}
 });
+
+//COUNTER ON BUTTON CLICK
+var eventcounter = -1;
+
+function nextCounter() {
+	eventcounter += 1;
+	//	$("#eventcounter1").hide();
+
+	if (eventcounter < 1) {
+		$("#eventcounter").hide();
+	} else {
+		document.getElementById("eventcounter").innerHTML = eventcounter;
+		$("#eventcounter").show();
+	}
+
+};
+
+function prevCounter() {
+	eventcounter -= 1;
+	//	$("#eventcounter1").hide();
+	if (eventcounter < 1) {
+		eventcounter = 0;
+	} else {
+		document.getElementById("eventcounter").innerHTML = eventcounter;
+		$("#eventcounter").show();
+	}
+};
