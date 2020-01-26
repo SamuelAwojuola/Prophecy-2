@@ -152,7 +152,6 @@ nav button {
 
 
 	/*ANDROID BUTTONS STYLING*/
-
 	nav button {
 		font-size: 50px;
 		padding: 18px 200px 0px 200px;
@@ -163,7 +162,7 @@ nav button {
 		min-height: 100px;
 		min-width: 20%;
 		font-size: 25px;
-		/*		float: none;*/
+		border: 2px solid black;
 	}
 
 	.navbuttons2 {

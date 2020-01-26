@@ -185,6 +185,7 @@ td:empty {
 		font-size: 30px;
 		text-align: center;
 		background-color: beige;
+		padding-bottom: 50px;
 	}
 
 	table {}
