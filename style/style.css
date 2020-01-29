@@ -112,15 +112,17 @@ th,
 td {
 	padding: 8px;
 	border-bottom: 1px solid #ddd;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
 	min-width: 50px;
 	/*    min-height: 25px;*/
-	border-left: 2.5px solid #b1b1b1;
+	border-left: 2px solid #645252;
 	text-align: center;
 }
 
 tr td:last-child,
 tr th:last-child {
-	border-right: 2.5px solid #b1b1b1;
+	border-right: 5px solid #645252;
 }
 
 tr td:first-child,
@@ -147,13 +149,21 @@ tr {
 }
 
 tr:hover {
-	background-color: #ffffff;
+	/*	background-color: #ffffff;*/
 }
 
 th:hover,
 td:hover {
-	background-color: rgba(235, 225, 169, 0.58);
+	background-color: rgba(217, 235, 169, 0.58);
 	color: #862a2a;
+	border-right: black;
+	border-left: black;
+	/*
+	-webkit-transition: background-color 1s ease;
+	-moz-transition: background-color 1s ease;
+	-o-transition: background-color 1s ease;
+	transition: background-color 1s ease;
+*/
 }
 
 td:empty {
@@ -175,14 +185,28 @@ td:empty {
 	float: right;
 	text-align: center;
 	display: none;
+	font-size: 20px;
+	margin: -4px 25px -4px 25px;
 }
 
+.colhighlight {
+	background-color: rgba(217, 235, 169, 0.58);
+}
+
+#details {
+	position: sticky;
+	bottom: 0;
+	padding-top: 10px;
+	background-color: beige;
+	border-top: 2px solid;
+	max-height: 300px;
+	overflow: auto;
+}
 
 /*for ANDROID phones*/
 @media only screen and (max-device-width : 768px) {
 
 	body {
-		font-size: 30px;
 		text-align: center;
 		background-color: beige;
 		padding-bottom: 50px;
@@ -209,20 +233,29 @@ td:empty {
 	a {
 		color: #480000;
 		/*    font-size: .9em;*/
-		font-size: 27px;
+		/*		font-size: 27px;*/
 	}
 
 	tr th:first-child {
 		font-size: 25px;
 	}
 
+	#eventcounter {
+		font-size: 50px;
+		margin: -5px;
+	}
+
+	#details {
+		max-height: 1200px;
+		padding-bottom: 50px;
+	}
 }
 
 /*for IPAD*/
 @media only screen and (max-device-width : 1024px) {
 
 	body {
-		font-size: 35px;
+		/*				font-size: 35px;*/
 		text-align: center;
 		background-color: beige;
 	}
@@ -243,7 +276,7 @@ td:empty {
 	a {
 		color: #480000;
 		/*    font-size: .9em;*/
-		font-size: 27px;
+		/*		font-size: 27px;*/
 	}
 
 	tr th:first-child {

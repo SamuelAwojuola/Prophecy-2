@@ -76,13 +76,14 @@ nav button {
 }
 
 .navbuttons {
+	max-width: 100px;
+	height: 15px;
+	overflow: hidden;
 	background-color: rgb(255, 255, 255);
 	border: 1px solid #bebebe;
 	color: black;
 	font-size: 10px;
 	margin: 5px 0 5px 0;
-	/*	padding: 0;*/
-	/*	z-index: 50;*/
 	font-weight: bold;
 	font-style: ;
 	float: left;
@@ -90,30 +91,24 @@ nav button {
 }
 
 .navbuttons2 {
-	/*	height: 15px;*/
-	/*	float: none;*/
-	/*	clear: right;*/
-	margin: 0;
+	/*	margin: 0;*/
 }
 
-.navbuttons:active {
+.navbuttons:hover {
 	background-color: beige;
-	box-shadow: 0;
 }
 
 .navbuttons:not(#tablemenu #tablemenuX) {
 	min-width: 100px;
 }
 
-.navbuttons:not(#mybutton) {
-	max-width: 100px;
-	height: 15px;
-	overflow: hidden;
+.navbuttonactive {
+	background-color: #eaffc8;
 }
 
 #showall,
 #summary {
-	display: none;
+	/*	display: none;*/
 }
 
 .one-eventpertime-nav-top {
@@ -124,6 +119,21 @@ nav button {
 .one-eventpertime-nav-bottom {
 	display: none;
 }
+
+.one-eventpertime-nav-top2 {
+	display: none;
+}
+
+#detailsclosebutton {
+	position: sticky;
+	top: 0;
+	float: right;
+	width: auto;
+	padding: 0 5px;
+	font-weight: bolder;
+	display: none;
+}
+
 
 /*FOR ANDROID PHONES*/
 @media only screen and (max-device-width : 768px) {
@@ -195,7 +205,12 @@ nav button {
 		bottom: 0;
 		left: 0;
 		right: 0;
-		/*		background-color: palevioletred;*/
+	}
+
+	#detailsclosebutton {
+		background-color: rgba(245, 245, 220, 0.97);
+		border: 2px solid #939365;
+		box-shadow: none;
 	}
 }
 
@@ -225,18 +240,6 @@ nav button {
 	nav button {
 		font-size: 50px;
 		padding: 18px 480px 0px 480px;
-	}
-
-	#mybutton {
-		background-color: rgba(255, 255, 255, 0);
-		border: 0px dotted white;
-		color: black;
-		font-size: 30px;
-		margin: 0;
-		padding-bottom: 10px;
-		z-index: 50;
-		font-weight: bold;
-		font-style: oblique;
 	}
 
 }

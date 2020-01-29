@@ -37,21 +37,32 @@
 		<div style="display: inline-block; width: 100%; padding-top: 5px;">
 			<div>
 				<button id="tablemenu" class="navbuttons navbuttons2">&#9776;</button>
-				<button id="showall" class="navbuttons navbuttons2">Show All</button>
-				<button id="showmain" class="navbuttons navbuttons2">Main Time</button>
 				<button id="summary" class="navbuttons navbuttons2">Summary</button>
+				<button id="showmain" class="navbuttons navbuttons2">Main Time</button>
+				<button id="showall" class="navbuttons navbuttons2">ShowAll</button>
 
 
 
+				<!--COLUMN ONE AT A TIME-->
+				<div class="one-eventpertime-nav-top">
+					<span class="one-eventpertime-nav-top1">
+						<button class="navbuttons navbuttons2 prevBtn" onClick="prevCounter()">PREV</button>
+						<button class="navbuttons navbuttons2 nextBtn" onClick="nextCounter()">NEXT</button>
 
-				<div style="float: right;" class="one-eventpertime-nav-top">
+					</span>
 
-					<button class="navbuttons navbuttons2 prevBtn" style="margin-left: 50px;" onClick="prevCounter()">PREV</button>
-					<button class="navbuttons navbuttons2 nextBtn" onClick="nextCounter()">NEXT</button>
+					<span class="one-eventpertime-nav-top2">
+						<button class="navbuttons navbuttons2 prevBtn2" onClick="prevCounter()">PREV</button>
+						<button class="navbuttons navbuttons2 nextBtn2" onClick="nextCounter()">NEXT</button>
+					</span>
+
 					<button class="navbuttons navbuttons2 refreshBtn" style="margin-left: 10px;">REFRESH</button>
 
-				</div>
+					<button class="navbuttons navbuttons2 one-eventpertime-nav-top1" id="colSolo" onClick="colSolo()" style="background-color: #eaffc8; width: 66px;">SOLO-YES</button>
 
+					<button class="navbuttons navbuttons2 one-eventpertime-nav-top2" id="colSolo" onClick="colPreviousPreserve()" style="background-color:#ffe6ea; color: firebrick; width: 66px;">SOLO-NO</button> </div>
+
+				<!--FOR EVENT COUNTER-->
 				<div id="eventcounter">0</div>
 
 			</div>
@@ -62,7 +73,6 @@
 	<!--TIMELINE TIMETABLE-->
 
 	<div class="timelineTableContainer">
-
 		<table class="timelineTable" id="timelineTable">
 
 			<tbody>
@@ -205,11 +215,13 @@
 					<td>&nbsp;</td>
 					<td>&nbsp;</td>
 					<td>&nbsp;</td>
-					<td>(First)<font>Resurrection of the dead [Deu 32:39]</font>
+					<td><em>(First)</em>
+						<font>Resurrection of the dead [Deu 32:39]</font>
 					</td>
 					<td>&nbsp;</td>
 					<td>&nbsp;</td>
-					<td>(Last)<font>Resurrection of the dead [Deu 32:39]</font>
+					<td><em>(Last)</em>
+						<font>Resurrection of the dead [Deu 32:39]</font>
 					</td>
 					<td>&nbsp;</td>
 				</tr>
@@ -225,7 +237,8 @@
 			</tbody>
 		</table>
 	</div>
-	<div id="details" style="position:sticky; bottom: 0; padding-top: 10px; background-color: beige; border-top: 2px solid; max-height: 300px; overflow: auto;">
+	<div id="details">
+		<button id="detailsclosebutton" class="navbuttons">&#9932;</button>
 		<div class="detailsIsrael" style="display: none">
 			<h2>ISRAEL</h2>
 			<p>
@@ -244,7 +257,7 @@
 				We here try to breakdown the prophecy, laying out its main characters, conflicts and events (among other things).
 			</p>
 		</div>
-		<div class="detailsYahweh’s_Wrath" style="display: none">
+		<div class="detailsYahweh’s_Wrath" style="display: none; ">
 			<h2>YAHWEH'S WRATH</h2>
 
 			<p>

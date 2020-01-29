@@ -1,5 +1,6 @@
 //TO CHECK.ALL AND UN.CHECK.ALL
 $(document).ready(function () {
+
 	// Check or Uncheck All checkboxes
 	$("#checkall").change(function () {
 		var checked = $(this).is(':checked');
@@ -56,6 +57,8 @@ $(function () {
 		}
 	});
 
+	$('#summary').addClass('navbuttonactive');
+
 	$('#showmain').click(function () {
 		$('.tdsubhead').each(function (i) {
 			var elm = $(this);
@@ -63,11 +66,19 @@ $(function () {
 			setTimeout(function () {
 				console.log("removing" + 1);
 				elm.show();
-			}, i * 25);
+			}, i * 75);
 		});
-		$('#showall').show();
-		$('#showmain').hide();
-		$('#summary').hide();
+		$('tr').not('.tdsubhead, tr:first-child').each(function (i) {
+			var elm = $(this);
+			console.log(elm);
+			setTimeout(function () {
+				console.log("removing" + 1);
+				elm.hide();
+			}, i * 75);
+		});
+		$('#showall').removeClass('navbuttonactive');
+		$('#showmain').addClass('navbuttonactive');
+		$('#summary').removeClass('navbuttonactive');
 		$('#tablemenubutton1').hide();
 		$('#tablemenubutton2').show();
 		//		$('#guideheadings > h4:first-child').hide();
@@ -80,11 +91,11 @@ $(function () {
 			setTimeout(function () {
 				console.log("removing" + 1);
 				elm.show();
-			}, i * 25);
+			}, i * 75);
 		});
-		$('#showall').hide();
-		$('#showmain').hide();
-		$('#summary').show();
+		$('#showall').addClass('navbuttonactive');
+		$('#showmain').removeClass('navbuttonactive');
+		$('#summary').removeClass('navbuttonactive');
 		$('#tablemenubutton1').hide();
 		$('#tablemenubutton2').show();
 		//		$('#guideheadings > h4:first-child ').hide();
@@ -99,11 +110,11 @@ $(function () {
 			setTimeout(function () {
 				console.log("removing" + 1);
 				elm.hide();
-			}, i * 25);
+			}, i * 75);
 		});
-		$('#showall').hide();
-		$('#showmain').show();
-		$('#summary').hide();
+		$('#showall').removeClass('navbuttonactive');
+		$('#showmain').removeClass('navbuttonactive');
+		$('#summary').addClass('navbuttonactive');
 		$('#tablemenubutton1').show();
 		$('#tablemenubutton2').hide();
 		//		$('#guideheadings > h4:first-child').show();
@@ -174,13 +185,19 @@ $(document).ready(function () {
 
 $(function () {
 	$(".tdsubhead").click(function () {
+		$("#detailsclosebutton").show();
 		var valueInput = $(this).attr("value");
 		var exempt = $(".details" + valueInput);
 		$("#details>div").not(exempt).hide();
 		$(exempt).toggle(200);
 	});
-});
 
+	$("#detailsclosebutton").click(function () {
+		$("#details>div").hide(200);
+		$(this).hide(200);
+	});
+
+});
 
 
 
